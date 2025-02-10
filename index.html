@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Fahrian Annas</title>
+    <title>Portofolio - Fahrian Annas</title>
     <link rel="stylesheet" href="styles.css">
     
 
@@ -12,24 +12,34 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="logo smk.png" width="100" alt="Logo" class="logo">
+            <img src="logo.png" width="100" alt="Logo" class="logo">
         </div>
-        <div class="header-content">
-                    <h1>FAHRIAN ANNAS</h1>
-                    <p class="tagline">Web Developer | Siswa SMKN 11 Semarang</p>
-                </div>
-            </div>
+        <div class="nav-container">
+            <h1>Fahrian Annas</h1>
             <nav>
-                <ul>
+                <button class="hamburger" type="button" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
                     <li><a href="#about">Tentang Saya</a></li>
                     <li><a href="#skills">Keahlian</a></li>
-                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#projects">Projek</a></li>
                     <li><a href="#education">Pendidikan</a></li>
                     <li><a href="#contact">Kontak</a></li>
+                    <li><a href="cv.pdf">CV</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <div id="cvModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <embed type="application/pdf" src="cv.pdf"></embed>
+        </div>
+    </div>
     
     <section id="about">
         <h2>Tentang Saya</h2>
@@ -52,7 +62,7 @@
             <div class="skill-item">
                 <img src="logo html.png" width="100" alt="Logo" class="logo">
                 <p>HTML</p>
-                <p>saya memiliki beberapa kemampuan dalam menggunakan aplikasi html</p>
+                <p>saya memiliki beberapa kemampuan dalam menggunakan bahasa html</p>
             </div>
             <div class="skill-item">
                 <img src="logo ai.png" width="100" alt="Logo" class="logo">
@@ -64,6 +74,17 @@
                 <p>Unity</p>
                 <p>saya memiliki beberapa kemampuan dalam menggunakan aplikasi Unity</p>  
             </div>
+            <div class="skill-item">
+                <img src="logo blender (1).png" width="100" alt="Logo" class="logo">
+                <p>Blender</p>
+                <p>saya memiliki beberapa kemampuan dalam menggunakan aplikasi Blender</p>  
+            </div>
+            <div class="skill-item">
+                <img src="logo css.png" width="100" alt="Logo" class="logo">
+                <p>css</p>
+                <p>saya memiliki beberapa kemampuan dalam menggunakan bahasa css</p>  
+            </div>
+           
         </div>
     </section>
     
@@ -205,5 +226,7 @@
             </div>
         </div>
     </section>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
